@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title>
+            Projects
+        </title>
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        
+    </head>
+    <body>
+
+        <div id="navbar">
+            <a class="selected" href="home.html">Projects</a>
+            <a href="bio.html">About</a>
+            <a href="resume.html">Resume</a>
+            <a id="contact" href="contact.html">Contact</a>
+        </div>
+
+        <div id="top-image">
+            <img class="top-image" src="welcome1.jpg">
+            <div class="top-image-text">Sankalp Dwivedi</div>
+        </div>
+
+        <div class="content">
+
+            <div class="page-header">Projects</div>
+            <div class="page-description">
+                These are 2 project that I have done through the course of my studies. Be sure to check it out on Github!
+            </div>
+
+
+            <div class="project-list">
+
+                <div class="project" id="project1" onmouseover="projectDescriptionOn(this.id)" onmouseout="projectDescriptionOff(this.id)">
+                    <div class="project-display">
+                        <img class="project-display-image" id="project1" src="Cypher1.png">
+                        <div class="project-description-hover" id="descriptionproject1">
+                            <div class="project-description">
+                                The main objective of this project is to ease the process of extracting information from news articles. The tasks to be completed are a.) Classifying the data with machine learning. b.) Extraction of relevant entities from the dataset. c.) Creating a graphical database to showcase the relationships between entities.
+                            </div>
+                            <a class="project-button" target="_blank" href="https://github.com/dwivedisankalp97/Knowledge-Visualization-Neo4j">Github</a>
+                            <button class="project-button" id="project1button" onclick="openProjectDescription(this.id)">Read More</button>
+                        </div>
+                    </div>
+                    <div class="project-name" id="name-project1">
+                        Knowledge Visualization from News Articles Using a Graph DB
+                    </div>
+                </div>
+
+                <div class="project" id="project2" onmouseover="projectDescriptionOn(this.id)" onmouseout="projectDescriptionOff(this.id)">
+                    <div class="project-display">
+                        <img class="project-display-image" id="project2" src="Android-logo.jpg">
+                        <div class="project-description-hover" id="descriptionproject2">
+                            <div class="project-description">
+                                This Android applications scans RFID tags installed in student ID cards to store their credentials and use it to take attendance. It only works on NFC enabled smartphones.
+                            </div>
+                            <a class="project-button" target="_blank" href="https://github.com/dwivedisankalp97/Knowledge-Visualization-Neo4j">Github</a>
+                            <button class="project-button" id="project2button" onclick="openProjectDescription(this.id)">Read More</button>
+                        </div>
+                    </div>
+                    <div class="project-name" id="name-project2">
+                        NFC Attendance Android Application
+                    </div>
+                </div>
+
+                <div id="project1-modal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close" id="close1">&times;</span>
+                        <div class="project-description">The project is be created using python and neo4j. First, through python and scikit-learn machine learning library, we will detect the presence of relationships in pre-processed news articles. Then, using Spacy NLP library we will extract the relevant entities such as people, places and other nouns that are present in the document. The relationship will be determined through dependency parsing, such as if two people are mentioned in the same document, we need to identify the relationship between two people in order to store them in the graph property model. Then, through python scripts, we will create a neo4j database that includes the relationships between entities. <a target="_blank" href="https://github.com/dwivedisankalp97/Knowledge-Visualization-Neo4j">Go to Github</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="project2-modal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close" id="close2">&times;</span>
+                        <div>
+                            <p>This Android applications scans RFID tags installed in student ID cards to store their credentials and use it to take attendance.
+                                It only works on NFC enabled smartphones. </p>
+
+                            <p>The app contains the following modules:</p>
+
+                            <ol>
+                                <li>Homepage</li>
+                                <li>Add Students</li>
+                                <li>Add New Class</li>
+                                <li>Add Students to Class </li>
+                                <li>Take Attendance</li>
+                            </ol>
+                            <a target="_blank" href="https://github.com/dwivedisankalp97/NFC-Attendance">Go to Github</a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <script src="home.js"></script>
+    </body>
+
+</html>
