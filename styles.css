@@ -1,7 +1,8 @@
 body{
     background-color: #3AAFA9;
     font-family: 'Alegreya', serif;
-
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 a {
