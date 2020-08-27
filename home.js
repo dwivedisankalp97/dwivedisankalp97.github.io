@@ -48,16 +48,11 @@ function projectDescriptionOff(id){
 function openProjectDescription(id){
     //            alert("in");
     var str = id;
-    if(str.indexOf("project1") != -1){
-        var modal = document.getElementById("project1-modal");
-        var span = document.getElementById("close1");
-        modal.style.display = "block";
-    }
-    else{
-        var modal = document.getElementById("project2-modal");
-        var span = document.getElementById("close2");
-        modal.style.display = "block";
-    }
+    var n = str.charAt(str.length-1);
+    var modal = document.getElementById("project" + n +"-modal");
+    var span = document.getElementById("close" + n);
+    modal.style.display = "block";
+
     span.onclick = function(){
         modal.style.display = "none";
     }
